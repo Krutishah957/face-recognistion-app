@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> FACE RECOGNITION APP </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+   
+
+   <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+        <div class="container">
+            <h3 class="btn btn-default heading"> FACE RECOGNITION APP </h3>
+            <p style="font-size:22px"> MODEL IS TRAINED TO IDENTIFY THE FOLLOWING OBJECTS:</p>
+
+            <br>
+            <br>
+            <hr>
+            <h4>BROTHER:</h4>
+            <hr>
+            <br>
+            <h4> SISTER:</h4>
+            <hr>
+            <br>
+
+            <label>  Webcam view-</label>
+            <div id="Webcam view"> </div>
+            <div id="result"> </div>
+            <br> <br>
+
+            <button onclick="take_snapshot()" class="btn btn-info"> CAPTURE IMAGE </button>
+            <button onclick="check()" class="btn btn-info"> IDENTIFY IMAGE </button>
+
+            <br> <br>
+
+            <p style="font-size: 22px;"> OBJECT: <span id="result_object_name>"> </span></p>
+            <p style="font-size: 22px;"> ACCURACY: <span id="result_object_accuracy>"> </span></p>
+       
+
+        </center>
+
+        </div>
+        <script src="main.js"> </script>
+    </body>
+</html>
